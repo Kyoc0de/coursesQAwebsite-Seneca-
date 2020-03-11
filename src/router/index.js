@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Login from '../components/Login'
 import Home from "../components/Home";
+import Index from "../components/IndexPage/Index";
 
 
 Vue.use(VueRouter)
@@ -12,6 +13,9 @@ const routes = [
   },
   {
     path: '/home', component: Home
+  },
+  {
+    path: '/', component: Index
   }
 ]
 
