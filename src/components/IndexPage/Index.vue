@@ -3,9 +3,10 @@
         <el-container>
             <el-header>
                 <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
+                    <el-menu-item><img style="width: 150px" src="../../assets/seneca-logo.svg" alt=""> </el-menu-item>
                     <el-menu-item index="1" default-active>首页</el-menu-item>
                     <el-submenu index="2">
-                        <template slot="title">分类查询</template>
+                        <template slot="title">按专业查询</template>
                         <el-menu-item index="2-1">Programming</el-menu-item>
                         <el-menu-item index="2-2">Networking</el-menu-item>
                         <el-submenu index="2-3">
@@ -84,10 +85,21 @@
                     </el-col>
                     <el-col :span="4">
                         <el-card class="box-card">
-                            <h2>公告</h2>
-                            <h3>关于开发计划</h3>
+                            <div class="avatar_box">
+                                <img src="../../assets/avatar.png" alt="">
+                            </div>
                             <br>
-                            <h3><a href="#">登录</a> 解锁更多功能</h3>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <div>
+                            <h2>公告</h2>
+                            <h3>关于Seneca互助论坛开发计划</h3>
+                            <br>
+                            <h3><a href="#">登录</a> => 解锁更多功能</h3>
+                            </div>
                         </el-card>
 
 
@@ -223,5 +235,22 @@
     a{
         color: gray;
         text-decoration: none;
+    }
+    .avatar_box{
+        height: 130px;
+        width: 130px;
+        border: 1px solid #eee;
+        border-radius: 50%;
+        padding: 6px;
+        box-shadow: 0 0 10px #ddd;
+        position: absolute;
+        left: 73.5%;
+        transform: translate(100%,-20%);
+        background-color: #fff;
+        img{
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
     }
 </style>

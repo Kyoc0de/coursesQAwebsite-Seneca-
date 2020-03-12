@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Login from '../components/Login'
 import Home from "../components/Home";
 import Index from "../components/IndexPage/Index";
+import Post from "../components/IndexPage/Post";
 
 
 Vue.use(VueRouter)
@@ -16,6 +17,9 @@ const routes = [
   },
   {
     path: '/', component: Index
+  },
+  {
+    path: '/post', component: Post
   }
 ]
 
@@ -23,11 +27,11 @@ const router = new VueRouter({
   routes
 })
 
-router.beforeEach((to,from,next)=>{
-  if(to.path === '/login') return next()
-  const tokenStr = window.sessionStorage.getItem('token')
-  if(!tokenStr) return next('/login')
-  next()
-})
+// router.beforeEach((to,from,next)=>{
+//   if(to.path === '/login') return next()
+//   const tokenStr = window.sessionStorage.getItem('token')
+//   if(!tokenStr) return next('/login')
+//   next()
+// })
 
 export default router
