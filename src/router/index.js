@@ -4,6 +4,8 @@ import Login from '../components/UserPage/Login'
 import Home from "../components/Home";
 import Index from "../components/IndexPage/Index";
 import Post from "../components/IndexPage/Post";
+import FirstPage from "../components/test/FirstPage";
+import TimeLine from "../components/test/TimeLine";
 
 
 Vue.use(VueRouter)
@@ -20,6 +22,12 @@ const routes = [
   },
   {
     path: '/post', component: Post
+  },
+  {
+    path: '/test', component: FirstPage
+  },
+  {
+    path: '/test1', component: TimeLine
   }
 ]
 

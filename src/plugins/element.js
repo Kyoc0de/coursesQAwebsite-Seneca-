@@ -11,7 +11,7 @@ import {
     Menu,
     MenuItem,
     Submenu,
-    Main,Row,Col,Card,Table,TableColumn,Pagination,Breadcrumb,BreadcrumbItem,DatePicker
+    Main,Row,Col,Card,Table,TableColumn,Pagination,Breadcrumb,BreadcrumbItem,DatePicker,Image,Divider,Timeline,TimelineItem
 } from 'element-ui'
 import { mavonEditor } from 'mavon-editor'
 import 'mavon-editor/dist/css/index.css'
@@ -37,6 +37,10 @@ Vue.use(mavonEditor)
 Vue.use(Breadcrumb)
 Vue.use(BreadcrumbItem)
 Vue.use(DatePicker)
+Vue.use(Image)
+Vue.use(Divider)
+Vue.use(Timeline)
+Vue.use(TimelineItem)
 
 
 Vue.prototype.$message = Message
